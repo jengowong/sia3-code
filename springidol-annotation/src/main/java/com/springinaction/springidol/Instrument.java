@@ -2,6 +2,6 @@
 package com.springinaction.springidol;
 
 public interface Instrument {
-  public void play();
+    void play();
 }
 // <end id="instrument_java" />

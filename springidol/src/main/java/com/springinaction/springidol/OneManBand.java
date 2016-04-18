@@ -3,20 +3,23 @@ package com.springinaction.springidol;
 
 import java.util.Collection;
 
+/**
+ * 一人乐队
+ */
 public class OneManBand implements Performer {
-  public OneManBand() {
-  }
-
-  public void perform() throws PerformanceException {
-    for (Instrument instrument : instruments) {
-      instrument.play();
+    public OneManBand() {
     }
-  }
 
-  private Collection<Instrument> instruments;
+    public void perform() throws PerformanceException {
+        for (Instrument instrument : instruments) {
+            instrument.play();
+        }
+    }
 
-  public void setInstruments(Collection<Instrument> instruments) {
-    this.instruments = instruments; //<co id="co_injectInstrumentCollection"/>
-  }
+    private Collection<Instrument> instruments;
+
+    public void setInstruments(Collection<Instrument> instruments) {
+        this.instruments = instruments; //<co id="co_injectInstrumentCollection"/>
+    }
 }
 //<end id="onemanband_java" />
