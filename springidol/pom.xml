@@ -11,9 +11,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.springinaction</groupId>
     <artifactId>springidol</artifactId>
-    <version>3.0.0</version>
     <packaging>jar</packaging>
 
     <name>Spring in Action Spring Idol</name>

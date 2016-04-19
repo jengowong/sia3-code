@@ -1,14 +1,17 @@
 package com.springinaction.springidol;
 
+/**
+ * 读心者：魔术师
+ */
 public class Magician implements MindReader {
-  private String thoughts;
+    private String thoughts;
 
-  public void interceptThoughts(String thoughts) {
-    System.out.println("Intercepting volunteer's thoughts");
-    this.thoughts = thoughts;
-  }
+    public void interceptThoughts(String thoughts) {
+        System.out.println("Intercepting volunteer's thoughts");
+        this.thoughts = thoughts;
+    }
 
-  public String getThoughts() {
-    return thoughts;
-  }
+    public String getThoughts() {
+        return thoughts;
+    }
 }
