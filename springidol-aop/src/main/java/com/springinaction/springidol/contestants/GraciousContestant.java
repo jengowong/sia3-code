@@ -1,4 +1,6 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.contestants;
+
+import com.springinaction.springidol.contestants.Contestant;
 
 /**
  * 高尚的参赛人

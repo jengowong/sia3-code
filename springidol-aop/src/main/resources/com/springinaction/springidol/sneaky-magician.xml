@@ -7,16 +7,18 @@
                            http://www.springframework.org/schema/aop
                            http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="volunteer" class="com.springinaction.springidol.Volunteer"/>
-    <bean id="magician" class="com.springinaction.springidol.Magician"/>
+    <bean id="volunteer" class="com.springinaction.springidol.thinkers.Volunteer"/>
+    <bean id="magician" class="com.springinaction.springidol.mindreaders.Magician"/>
 
     <!--<start id="mindreading_aspect"/>-->
     <aop:config>
         <aop:aspect ref="magician">
             <aop:pointcut id="thinking"
-                          expression="execution(* com.springinaction.springidol.Thinker.thinkOfSomething(String)) and args(thoughts)"/>
+                          expression="execution(* com.springinaction.springidol.thinkers.Thinker.thinkOfSomething(String)) and args(thoughts)"/>
 
-            <aop:before pointcut-ref="thinking" method="interceptThoughts" arg-names="thoughts"/>
+            <aop:before pointcut-ref="thinking"
+                        method="interceptThoughts"
+                        arg-names="thoughts"/>
         </aop:aspect>
     </aop:config>
     <!--<end id="mindreading_aspect"/>-->

@@ -1,5 +1,8 @@
 package com.springinaction.springidol;
 
+/**
+ * 乐器
+ */
 public interface Instrument {
-  public void play();
+    void play();
 }

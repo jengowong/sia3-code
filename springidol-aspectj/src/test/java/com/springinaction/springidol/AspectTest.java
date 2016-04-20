@@ -10,18 +10,19 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("spring-idol.xml")
 public class AspectTest {
-  @Autowired
-  ApplicationContext context;
+    @Autowired
+    ApplicationContext context;
 
-  @Test
-  public void audienceShouldApplaud() throws Exception {
-    Performer eddie = (Performer) context.getBean("eddie");
-    eddie.perform();
-  }
+    @Test
+    public void audienceShouldApplaud() throws Exception {
+        Performer eddie = (Performer) context.getBean("eddie");
+        eddie.perform();
+    }
 
-  @Test
-  public void eddieShouldBeAContestant() {
-    Contestant eddie = (Contestant) context.getBean("eddie");
-    eddie.receiveAward();
-  }
+    @Test
+    public void eddieShouldBeAContestant() {
+        Contestant eddie = (Contestant) context.getBean("eddie");
+        eddie.receiveAward();
+    }
+
 }

@@ -1,4 +1,6 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.mindreaders;
+
+import com.springinaction.springidol.mindreaders.MindReader;
 
 /**
  * 读心者：魔术师

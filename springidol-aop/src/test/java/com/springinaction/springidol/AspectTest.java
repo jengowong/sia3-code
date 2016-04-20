@@ -1,5 +1,7 @@
 package com.springinaction.springidol;
 
+import com.springinaction.springidol.contestants.Contestant;
+import com.springinaction.springidol.performers.Performer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,18 +12,20 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("spring-idol-introductions.xml")
 public class AspectTest {
-  @Autowired
-  ApplicationContext context;
 
-  @Test
-  public void audienceShouldApplaud() throws Exception {
-    Performer eddie = (Performer) context.getBean("eddie");
-    eddie.perform();
-  }
+    @Autowired
+    ApplicationContext context;
 
-  @Test
-  public void eddieShouldBeAContestant() {
-    Contestant eddie = (Contestant) context.getBean("eddie");
-    eddie.receiveAward();
-  }
+    @Test
+    public void audienceShouldApplaud() throws Exception {
+        Performer eddie = (Performer) context.getBean("eddie");
+        eddie.perform();
+    }
+
+    @Test
+    public void eddieShouldBeAContestant() {
+        Contestant eddie = (Contestant) context.getBean("eddie");
+        eddie.receiveAward();
+    }
+
 }

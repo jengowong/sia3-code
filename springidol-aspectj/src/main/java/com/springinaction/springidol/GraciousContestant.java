@@ -3,7 +3,7 @@ package com.springinaction.springidol;
 
 public class GraciousContestant implements Contestant {
 
-  public void receiveAward() {
-    System.out.println("Why, thank you all very much!");
-  }
+    public void receiveAward() {
+        System.out.println("Why, thank you all very much!");
+    }
 }

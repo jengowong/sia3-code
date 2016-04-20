@@ -1,9 +1,10 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.audiences;
 
 /**
  * 观众
  */
 public class Audience {
+
     public void takeSeats() { //<co id="co_takeSeats"/>
         System.out.println("The audience is taking their seats.");
     }
@@ -19,4 +20,5 @@ public class Audience {
     public void demandRefund() { //<co id="co_demandRefund"/>
         System.out.println("Boo! We want our money back!");
     }
+
 }

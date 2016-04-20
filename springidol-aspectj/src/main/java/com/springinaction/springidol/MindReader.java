@@ -2,8 +2,8 @@
 package com.springinaction.springidol;
 
 public interface MindReader {
-  void interceptThoughts(String thoughts);
+    void interceptThoughts(String thoughts);
 
-  String getThoughts();
+    String getThoughts();
 }
 // <end id="mindreader_java" />

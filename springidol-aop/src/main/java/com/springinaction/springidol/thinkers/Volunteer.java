@@ -1,9 +1,12 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.thinkers;
+
+import com.springinaction.springidol.thinkers.Thinker;
 
 /**
  * 思想家：志愿者
  */
 public class Volunteer implements Thinker {
+
     private String thoughts;
 
     public void thinkOfSomething(String thoughts) {
@@ -13,4 +16,5 @@ public class Volunteer implements Thinker {
     public String getThoughts() {
         return thoughts;
     }
+
 }

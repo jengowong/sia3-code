@@ -7,21 +7,21 @@
                            http://www.springframework.org/schema/aop
                            http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="eddie" class="com.springinaction.springidol.Instrumentalist">
+    <bean id="eddie" class="com.springinaction.springidol.performers.Instrumentalist">
         <property name="instrument">
-            <bean class="com.springinaction.springidol.Guitar"/>
+            <bean class="com.springinaction.springidol.instruments.Guitar"/>
         </property>
     </bean>
 
     <!-- <start id="audience_bean" /> -->
-    <bean id="audience" class="com.springinaction.springidol.AroundAudience"/>
+    <bean id="audience" class="com.springinaction.springidol.audiences.AroundAudience"/>
     <!-- <end id="audience_bean" /> -->
 
     <!-- <start id="audience_aspect" /> -->
     <aop:config>
         <aop:aspect ref="audience">
             <aop:pointcut id="performance"
-                          expression="execution(* com.springinaction.springidol.Performer.perform(..))"/>
+                          expression="execution(* com.springinaction.springidol.performers.Performer.perform(..))"/>
 
             <aop:around pointcut-ref="performance" method="watchPerformance"/>
         </aop:aspect>
