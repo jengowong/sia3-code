@@ -1,4 +1,4 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.performers;
 
 /**
  * 表演者

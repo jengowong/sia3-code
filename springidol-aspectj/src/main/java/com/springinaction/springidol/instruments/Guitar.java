@@ -1,4 +1,4 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.instruments;
 
 /**
  * 乐器：吉他

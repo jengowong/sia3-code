@@ -1,4 +1,4 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.audiences;
 
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
@@ -11,7 +11,7 @@ import org.aspectj.lang.annotation.Pointcut;
  */
 @Aspect
 public class Audience {
-    @Pointcut("execution(* com.springinaction.springidol.Performer.perform(..))")
+    @Pointcut("execution(* com.springinaction.springidol.performers.Performer.perform(..))")
     public void performance() { //<co id="co_definePointcut"/>
     }
 

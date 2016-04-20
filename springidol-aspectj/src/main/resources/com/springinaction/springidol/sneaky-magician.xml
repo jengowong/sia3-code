@@ -7,8 +7,8 @@
                            http://www.springframework.org/schema/aop
                            http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="volunteer" class="com.springinaction.springidol.Volunteer"/>
-    <bean id="magician" class="com.springinaction.springidol.Magician"/>
+    <bean id="volunteer" class="com.springinaction.springidol.thinkers.Volunteer"/>
+    <bean id="magician" class="com.springinaction.springidol.mindreaders.Magician"/>
 
     <!-- <start id="aspectj_autoproxy" /> -->
     <aop:aspectj-autoproxy/>

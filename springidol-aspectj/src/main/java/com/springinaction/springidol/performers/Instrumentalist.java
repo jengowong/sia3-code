@@ -1,4 +1,6 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.performers;
+
+import com.springinaction.springidol.instruments.Instrument;
 
 /**
  * 乐器演奏家
@@ -18,4 +20,5 @@ public class Instrumentalist implements Performer {
     public Instrument getInstrument() {
         return instrument;
     }
+
 }

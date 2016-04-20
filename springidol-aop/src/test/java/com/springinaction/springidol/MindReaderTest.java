@@ -13,6 +13,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"sneaky-magician.xml"})
 public class MindReaderTest {
+
     @Autowired
     MindReader magician;
 
@@ -27,4 +28,5 @@ public class MindReaderTest {
         assertEquals("Queen of Hearts", magician.getThoughts());
     }
     //<end id="testMindReader"/>
+
 }

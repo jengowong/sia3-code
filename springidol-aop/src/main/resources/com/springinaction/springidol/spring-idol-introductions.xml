@@ -25,30 +25,39 @@
     <!--<start id="audience_aspect"/>-->
     <aop:config>
         <aop:aspect ref="audience">
-            <aop:pointcut id="performance"
+            <aop:pointcut id="pcPerform"
                           expression="execution(* com.springinaction.springidol.performers.Performer.perform(..))"/>
-            <aop:before pointcut-ref="performance" method="takeSeats"/>
-            <aop:before pointcut-ref="performance" method="turnOffCellPhones"/>
-            <aop:after-returning pointcut-ref="performance" method="applaud"/>
-            <aop:after-throwing pointcut-ref="performance" method="demandRefund"/>
+            <aop:before pointcut-ref="pcPerform" method="takeSeats"/>
+            <aop:before pointcut-ref="pcPerform" method="turnOffCellPhones"/>
+            <aop:after-returning pointcut-ref="pcPerform" method="applaud"/>
+            <aop:after-throwing pointcut-ref="pcPerform" method="demandRefund"/>
+
+            <aop:declare-parents
+                    types-matching="com.springinaction.springidol.performers.Performer+"
+                    implement-interface="com.springinaction.springidol.contestants.Contestant"
+                    delegate-ref="contestantDelegate"/>
         </aop:aspect>
 
         <!--<start id="contestant_introduction"/>-->
+        <!--
         <aop:aspect>
             <aop:declare-parents
                     types-matching="com.springinaction.springidol.performers.Performer+"
                     implement-interface="com.springinaction.springidol.contestants.Contestant"
                     default-impl="com.springinaction.springidol.contestants.GraciousContestant"/>
         </aop:aspect>
+        -->
         <!--<end id="contestant_introduction"/>-->
 
         <!--<start id="delegate_ref"/>-->
+        <!--
         <aop:aspect>
             <aop:declare-parents
-                    types-matching="com.springinaction.springidol.Performer+"
+                    types-matching="com.springinaction.springidol.performers.Performer+"
                     implement-interface="com.springinaction.springidol.contestants.Contestant"
                     delegate-ref="contestantDelegate"/>
         </aop:aspect>
+        -->
         <!--<end id="delegate_ref"/>-->
 
     </aop:config>

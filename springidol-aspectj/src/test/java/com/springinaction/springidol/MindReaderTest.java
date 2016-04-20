@@ -1,5 +1,7 @@
 package com.springinaction.springidol;
 
+import com.springinaction.springidol.mindreaders.MindReader;
+import com.springinaction.springidol.thinkers.Thinker;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +13,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"sneaky-magician.xml"})
 public class MindReaderTest {
+
     @Autowired
     MindReader magician;
 
@@ -25,4 +28,5 @@ public class MindReaderTest {
         assertEquals("Queen of Hearts", magician.getThoughts());
     }
     // <end id="testMindReader" />
+
 }
