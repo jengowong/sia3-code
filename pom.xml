@@ -43,6 +43,7 @@
         <module>springidol-javaconfig</module>
         <module>springidol-qualifiers</module>
         <module>snippets</module>
+        <module>persistence</module>
     </modules>
 
     <distributionManagement>

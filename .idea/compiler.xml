@@ -101,11 +101,19 @@
         <processorPath useClasspath="true" />
         <module name="rest-client" />
       </profile>
+      <profile default="false" name="Annotation profile for persistence" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="persistence" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="example-code" target="1.6" />
       <module name="knights" target="1.6" />
       <module name="messaging" target="1.6" />
+      <module name="persistence" target="1.6" />
       <module name="rest-client" target="1.5" />
       <module name="snippets" target="1.6" />
       <module name="springidol" target="1.6" />
