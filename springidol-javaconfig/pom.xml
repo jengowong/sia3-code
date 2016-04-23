@@ -14,7 +14,7 @@
     <artifactId>springidol-javaconfig</artifactId>
     <packaging>jar</packaging>
 
-    <name>Spring in Action Spring Idol (JavaConfig version)</name>
+    <description>Spring in Action Spring Idol (JavaConfig version)</description>
     <url>http://www.manning.com/walls4</url>
 
     <dependencies>

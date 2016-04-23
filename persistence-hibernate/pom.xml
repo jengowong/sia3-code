@@ -14,7 +14,7 @@
     <artifactId>persistence-hibernate</artifactId>
     <packaging>jar</packaging>
 
-    <name>persistence-hibernate</name>
+    <description>persistence-hibernate</description>
     <url>http://maven.apache.org</url>
 
     <properties>

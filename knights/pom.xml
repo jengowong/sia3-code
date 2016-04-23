@@ -14,7 +14,7 @@
     <artifactId>knights</artifactId>
     <packaging>jar</packaging>
 
-    <name>Spring in Action Knights</name>
+    <description>Spring in Action Knights</description>
     <url>http://www.manning.com/walls4</url>
 
     <dependencies>

@@ -14,7 +14,7 @@
     <artifactId>persistence-jdbc</artifactId>
     <packaging>jar</packaging>
 
-    <name>persistence</name>
+    <description>persistence-jdbc</description>
     <url>http://maven.apache.org</url>
 
     <properties>

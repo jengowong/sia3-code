@@ -17,26 +17,19 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Annotation profile for persistence-hibernate" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="persistence-hibernate" />
+      </profile>
       <profile default="false" name="Annotation profile for snippets" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="snippets" />
-      </profile>
-      <profile default="false" name="Annotation profile for springidol-autodiscovery" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="springidol-autodiscovery" />
-      </profile>
-      <profile default="false" name="Annotation profile for springidol-atinject" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="springidol-atinject" />
       </profile>
       <profile default="false" name="Annotation profile for springidol-qualifiers" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -52,19 +45,26 @@
         <processorPath useClasspath="true" />
         <module name="springidol-javaconfig" />
       </profile>
-      <profile default="false" name="Annotation profile for springidol" enabled="true">
+      <profile default="false" name="Annotation profile for springidol-autodiscovery" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="springidol" />
+        <module name="springidol-autodiscovery" />
       </profile>
-      <profile default="false" name="Annotation profile for springidol-annotation" enabled="true">
+      <profile default="false" name="Annotation profile for springidol-atinject" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="springidol-annotation" />
+        <module name="springidol-atinject" />
+      </profile>
+      <profile default="false" name="Annotation profile for springidol-aspectj" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="springidol-aspectj" />
       </profile>
       <profile default="false" name="Annotation profile for springidol-aop" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -73,12 +73,26 @@
         <processorPath useClasspath="true" />
         <module name="springidol-aop" />
       </profile>
-      <profile default="false" name="Annotation profile for springidol-aspectj" enabled="true">
+      <profile default="false" name="Annotation profile for springidol-annotation" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="springidol-aspectj" />
+        <module name="springidol-annotation" />
+      </profile>
+      <profile default="false" name="Annotation profile for springidol" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="springidol" />
+      </profile>
+      <profile default="false" name="Annotation profile for rest-client" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rest-client" />
       </profile>
       <profile default="false" name="Annotation profile for knights" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -94,20 +108,6 @@
         <processorPath useClasspath="true" />
         <module name="messaging" />
       </profile>
-      <profile default="false" name="Annotation profile for rest-client" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="rest-client" />
-      </profile>
-      <profile default="false" name="Annotation profile for persistence" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="persistence" />
-      </profile>
       <profile default="false" name="Annotation profile for persistence-jdbc" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -115,19 +115,10 @@
         <processorPath useClasspath="true" />
         <module name="persistence-jdbc" />
       </profile>
-      <profile default="false" name="Annotation profile for persistence-hibernate" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="persistence-hibernate" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="example-code" target="1.6" />
       <module name="knights" target="1.6" />
       <module name="messaging" target="1.6" />
-      <module name="persistence" target="1.6" />
       <module name="persistence-hibernate" target="1.6" />
       <module name="persistence-jdbc" target="1.6" />
       <module name="rest-client" target="1.5" />

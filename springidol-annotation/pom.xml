@@ -14,7 +14,7 @@
     <artifactId>springidol-annotation</artifactId>
     <packaging>jar</packaging>
 
-    <name>Spring in Action Spring Idol - Annotation Driven</name>
+    <description>Spring in Action Spring Idol - Annotation Driven</description>
     <url>http://www.manning.com/walls4</url>
 
     <dependencies>

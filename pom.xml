@@ -11,7 +11,7 @@
 
     <packaging>pom</packaging>
 
-    <name>Spring in Action Example Code</name>
+    <description>Spring in Action Example Code</description>
     <url>http://www.manning.com/walls4</url>
 
     <properties>

@@ -14,7 +14,7 @@
     <artifactId>rest-client</artifactId>
     <packaging>jar</packaging>
 
-    <name>Spitter</name>
+    <description>Spitter</description>
 
     <properties>
         <spring.version>3.0.4.RELEASE</spring.version>

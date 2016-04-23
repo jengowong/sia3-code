@@ -14,7 +14,7 @@
     <artifactId>springidol-autodiscovery</artifactId>
     <packaging>jar</packaging>
 
-    <name>Spring in Action Spring Idol - Auto-Discovery</name>
+    <description>Spring in Action Spring Idol - Auto-Discovery</description>
     <url>http://www.manning.com/walls4</url>
 
     <dependencies>

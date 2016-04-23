@@ -14,7 +14,7 @@
     <artifactId>springidol-aspectj</artifactId>
     <packaging>jar</packaging>
 
-    <name>Spring in Action Spring Idol - AspectJ Annotations</name>
+    <description>Spring in Action Spring Idol - AspectJ Annotations</description>
     <url>http://www.manning.com/walls4</url>
 
     <dependencies>

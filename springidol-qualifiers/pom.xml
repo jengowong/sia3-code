@@ -14,7 +14,7 @@
     <artifactId>springidol-qualifiers</artifactId>
     <packaging>jar</packaging>
 
-    <name>Spring in Action Spring Idol - Annotation Driven with Qualifiers</name>
+    <description>Spring in Action Spring Idol - Annotation Driven with Qualifiers</description>
     <url>http://www.manning.com/walls4</url>
 
     <dependencies>

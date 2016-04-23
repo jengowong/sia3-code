@@ -14,7 +14,7 @@
     <artifactId>springidol-atinject</artifactId>
     <packaging>jar</packaging>
 
-    <name>Spring in Action Spring Idol - JSR-330 Examples</name>
+    <description>Spring in Action Spring Idol - JSR-330 Examples</description>
     <url>http://www.manning.com/walls4</url>
 
     <dependencies>

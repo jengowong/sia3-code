@@ -14,7 +14,7 @@
     <artifactId>springidol-aop</artifactId>
     <packaging>jar</packaging>
 
-    <name>Spring in Action Spring Idol - AOP</name>
+    <description>Spring in Action Spring Idol - AOP</description>
     <url>http://www.manning.com/walls4</url>
 
     <dependencies>
