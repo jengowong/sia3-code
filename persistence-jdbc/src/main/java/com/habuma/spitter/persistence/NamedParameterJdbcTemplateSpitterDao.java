@@ -35,7 +35,7 @@ public class NamedParameterJdbcTemplateSpitterDao implements SpitterDao {
     public Spitter getSpitterById(long id) {
         Map<String, Object> args = new HashMap<String, Object>();
         args.put("id", id);
-
+        /*
         jdbcTemplate.queryForObject(
                 SQL_SELECT_SPITTER_BY_ID,
                 new ParameterizedRowMapper<Spitter>() {
@@ -46,12 +46,11 @@ public class NamedParameterJdbcTemplateSpitterDao implements SpitterDao {
                 },
                 args
         );
-
+        */
         return jdbcTemplate.queryForObject(
                 SQL_SELECT_SPITTER_BY_ID,
                 new ParameterizedRowMapper<Spitter>() {
-                    public Spitter mapRow(ResultSet rs, int rowNum)
-                            throws SQLException {
+                    public Spitter mapRow(ResultSet rs, int rowNum) throws SQLException {
                         Spitter spitter = new Spitter();
                         spitter.setId(rs.getLong(1));
                         spitter.setUsername(rs.getString(2));
@@ -60,8 +59,7 @@ public class NamedParameterJdbcTemplateSpitterDao implements SpitterDao {
                         return spitter;
                     }
                 },
-                id
-        );
+                id);
     }
     //<end id="java_getSpitterById" />
 

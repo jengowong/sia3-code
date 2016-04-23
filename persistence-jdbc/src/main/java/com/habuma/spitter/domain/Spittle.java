@@ -2,12 +2,15 @@ package com.habuma.spitter.domain;
 
 import java.util.Date;
 
+/**
+ * 唾沫
+ */
 public class Spittle {
 
-    private Long id;
-    private Spitter spitter;
-    private String text;
-    private Date when;
+    private Long id;         //唾沫id
+    private Spitter spitter; //吐唾沫的人
+    private String text;     //描述
+    private Date when;       //时间
 
     public Spittle() {
         this.spitter = new Spitter();  // HARD-CODED FOR NOW
@@ -45,4 +48,5 @@ public class Spittle {
     public void setSpitter(Spitter spitter) {
         this.spitter = spitter;
     }
+
 }

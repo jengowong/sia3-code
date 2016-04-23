@@ -16,4 +16,10 @@
         <constructor-arg ref="dataSource"/>
     </bean>
     <!-- <end id="bean.jdbcTemplate" /> -->
+
+    <!--<start id="bean.spitterDao" />-->
+    <bean id="spitterDao" class="com.habuma.spitter.persistence.SimpleJdbcTemplateSpitterDao">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+    <!--<end id="bean.spitterDao" />-->
 </beans>

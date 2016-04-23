@@ -6,7 +6,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.springinaction</groupId>
-    <artifactId>example-code</artifactId>
+    <artifactId>sia3-code</artifactId>
     <version>3.0.0</version>
     <packaging>pom</packaging>
 
@@ -43,7 +43,7 @@
         <module>springidol-javaconfig</module>
         <module>springidol-qualifiers</module>
         <module>snippets</module>
-        <module>persistence</module>
+        <module>persistence-jdbc</module>
     </modules>
 
     <distributionManagement>

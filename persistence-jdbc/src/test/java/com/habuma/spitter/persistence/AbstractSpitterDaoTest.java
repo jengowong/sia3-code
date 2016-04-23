@@ -22,7 +22,7 @@ import static org.springframework.test.jdbc.SimpleJdbcTestUtils.deleteFromTables
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
-        "classpath:persistence-context.xml",
+        //"classpath:persistence-context.xml",
         "classpath:test-dataSource-context.xml",
         "classpath:test-transaction-context.xml"
 })
@@ -63,7 +63,11 @@ public abstract class AbstractSpitterDaoTest {
         assertEquals(spitterIn, spitterOut);
     }
 
-    private Spitter insertASpitter(String username, String password, String fullname, String email, boolean updateByEmail) {
+    private Spitter insertASpitter(String username,
+                                   String password,
+                                   String fullname,
+                                   String email,
+                                   boolean updateByEmail) {
         Spitter spitter = new Spitter();
         spitter.setUsername(username);
         spitter.setPassword(password);

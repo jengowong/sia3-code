@@ -2,15 +2,18 @@ package com.habuma.spitter.domain;
 
 import java.util.List;
 
+/**
+ * 唾沫人
+ */
 public class Spitter {
 
-    private Long id;
-    private String username;
-    private String password;
-    private String fullName;
-    private List<Spittle> spittles;
-    private String email;
-    private boolean updateByEmail;
+    private Long id;                 //唾沫人id
+    private String username;         //唾沫人用户名
+    private String password;         //唾沫人密码
+    private String fullName;         //唾沫人全名
+    private List<Spittle> spittles;  //唾沫记录
+    private String email;            //邮箱
+    private boolean updateByEmail;   //
 
     public Long getId() {
         return id;
@@ -71,8 +74,14 @@ public class Spitter {
 
     @Override
     public boolean equals(Object obj) {
-        Spitter other = (Spitter) obj;
-        return other.fullName.equals(fullName) && other.username.equals(username) && other.password.equals(password);
+        if (obj instanceof Spitter) {
+            Spitter other = (Spitter) obj;
+            return other.fullName.equals(fullName) &&
+                    other.username.equals(username) &&
+                    other.password.equals(password);
+        } else {
+            return false;
+        }
     }
 
     @Override

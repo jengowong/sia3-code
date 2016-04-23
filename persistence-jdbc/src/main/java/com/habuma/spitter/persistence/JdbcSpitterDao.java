@@ -32,8 +32,7 @@ public class JdbcSpitterDao extends SimpleJdbcDaoSupport implements SpitterDao {
         return getSimpleJdbcTemplate().queryForObject(
                 SQL_SELECT_SPITTER_BY_ID,
                 new ParameterizedRowMapper<Spitter>() {
-                    public Spitter mapRow(ResultSet rs, int rowNum)
-                            throws SQLException {
+                    public Spitter mapRow(ResultSet rs, int rowNum) throws SQLException {
                         Spitter spitter = new Spitter();
                         spitter.setId(rs.getLong(1));
                         spitter.setUsername(rs.getString(2));
@@ -41,7 +40,8 @@ public class JdbcSpitterDao extends SimpleJdbcDaoSupport implements SpitterDao {
                         spitter.setFullName(rs.getString(4));
                         return spitter;
                     }
-                }, id);
+                },
+                id);
     }
 
     public void addSpitter(Spitter spitter) {
@@ -78,7 +78,6 @@ public class JdbcSpitterDao extends SimpleJdbcDaoSupport implements SpitterDao {
 
     public List<Spittle> getRecentSpittle() {
         DateTime dt = new DateTime().minusDays(1);
-
         return getSimpleJdbcTemplate().query(
                 SQL_SELECT_RECENT_SPITTLE,
                 new ParameterizedRowMapper<Spittle>() {
@@ -93,8 +92,7 @@ public class JdbcSpitterDao extends SimpleJdbcDaoSupport implements SpitterDao {
                         return spittle;
                     }
                 },
-                dt.toDate()
-        );
+                dt.toDate());
     }
 
     private long queryForIdentity() {
