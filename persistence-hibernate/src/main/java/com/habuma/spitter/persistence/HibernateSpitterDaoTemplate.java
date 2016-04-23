@@ -1,16 +1,15 @@
 package com.habuma.spitter.persistence;
 
-import java.util.List;
-
+import com.habuma.spitter.domain.Spitter;
+import com.habuma.spitter.domain.Spittle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Component;
 
-import com.habuma.spitter.domain.Spitter;
-import com.habuma.spitter.domain.Spittle;
+import java.util.List;
 
 @Component
-public class HibernateSpitterDao implements SpitterDao {
+public class HibernateSpitterDaoTemplate implements SpitterDao {
     @Autowired
     private HibernateTemplate template;
 

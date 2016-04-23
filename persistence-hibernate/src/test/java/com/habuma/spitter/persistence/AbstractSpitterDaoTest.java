@@ -20,7 +20,7 @@ import com.habuma.spitter.domain.Spitter;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
-        "classpath:persistence-context.xml",
+        "classpath:persistence-context-annotation.xml",
         "classpath:test-dataSource-context.xml",
         "classpath:test-transaction-context.xml"
 })
