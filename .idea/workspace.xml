@@ -4,6 +4,7 @@
     <list default="true" id="284636da-b152-43d6-8300-74d651332e46" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/persistence-hibernate/src/test/java/com/habuma/spitter/persistence/AbstractSpitterDaoTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/persistence-hibernate/src/main/java/com/habuma/spitter/persistence/HibernateSpitterDaoSession.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/persistence-hibernate/src/main/java/com/habuma/spitter/persistence/HibernateSpitterDaoTemplate.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/persistence-hibernate/src/main/java/com/habuma/spitter/persistence/JpaSpitterDao.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/persistence-hibernate/src/main/resources/Spitter.hbm.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/persistence-hibernate/src/main/java/com/habuma/spitter/domain/Spitter.java" />
@@ -1433,16 +1434,16 @@
       <created>1461393112027</created>
       <option name="number" value="Default" />
       <updated>1461393112027</updated>
-      <workItem from="1461393113259" duration="9690000" />
+      <workItem from="1461393113259" duration="9702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9690000" />
+    <option name="totallyTimeSpent" value="9702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="23" width="1391" height="866" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1460,7 +1461,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23647146" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3432172" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3432172" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
