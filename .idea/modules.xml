@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/knights/knights.iml" filepath="$PROJECT_DIR$/knights/knights.iml" />
       <module fileurl="file://$PROJECT_DIR$/messaging/messaging.iml" filepath="$PROJECT_DIR$/messaging/messaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/persistence-hibernate/persistence-hibernate.iml" filepath="$PROJECT_DIR$/persistence-hibernate/persistence-hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/persistence-jdbc/persistence-jdbc.iml" filepath="$PROJECT_DIR$/persistence-jdbc/persistence-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-client/rest-client.iml" filepath="$PROJECT_DIR$/rest-client/rest-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/sia3-code.iml" filepath="$PROJECT_DIR$/sia3-code.iml" />

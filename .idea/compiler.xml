@@ -115,12 +115,20 @@
         <processorPath useClasspath="true" />
         <module name="persistence-jdbc" />
       </profile>
+      <profile default="false" name="Annotation profile for persistence-hibernate" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="persistence-hibernate" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="example-code" target="1.6" />
       <module name="knights" target="1.6" />
       <module name="messaging" target="1.6" />
       <module name="persistence" target="1.6" />
+      <module name="persistence-hibernate" target="1.6" />
       <module name="persistence-jdbc" target="1.6" />
       <module name="rest-client" target="1.5" />
       <module name="sia3-code" target="1.6" />
