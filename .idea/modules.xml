@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/persistence-hibernate/persistence-hibernate.iml" filepath="$PROJECT_DIR$/persistence-hibernate/persistence-hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/persistence-jdbc/persistence-jdbc.iml" filepath="$PROJECT_DIR$/persistence-jdbc/persistence-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-client/rest-client.iml" filepath="$PROJECT_DIR$/rest-client/rest-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-tx/service-tx.iml" filepath="$PROJECT_DIR$/service-tx/service-tx.iml" />
       <module fileurl="file://$PROJECT_DIR$/sia3-code.iml" filepath="$PROJECT_DIR$/sia3-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/snippets/snippets.iml" filepath="$PROJECT_DIR$/snippets/snippets.iml" />
       <module fileurl="file://$PROJECT_DIR$/springidol/springidol.iml" filepath="$PROJECT_DIR$/springidol/springidol.iml" />

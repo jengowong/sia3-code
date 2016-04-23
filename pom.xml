@@ -46,6 +46,7 @@
         <module>snippets</module>
         <module>persistence-jdbc</module>
         <module>persistence-hibernate</module>
+        <module>service-tx</module>
     </modules>
 
     <distributionManagement>

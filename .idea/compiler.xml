@@ -115,6 +115,13 @@
         <processorPath useClasspath="true" />
         <module name="persistence-jdbc" />
       </profile>
+      <profile default="false" name="Annotation profile for service-tx" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="service-tx" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="knights" target="1.6" />
@@ -122,6 +129,7 @@
       <module name="persistence-hibernate" target="1.6" />
       <module name="persistence-jdbc" target="1.6" />
       <module name="rest-client" target="1.5" />
+      <module name="service-tx" target="1.6" />
       <module name="sia3-code" target="1.6" />
       <module name="snippets" target="1.6" />
       <module name="springidol" target="1.6" />
