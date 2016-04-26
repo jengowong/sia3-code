@@ -66,7 +66,6 @@ public class SpitterServiceImpl_Programmatic implements SpitterService {
 
     public void startFollowing(Spitter follower, Spitter followee) {
         // TODO Auto-generated method stub
-
     }
 
     public List<Spittle> getSpittlesForSpitter(Spitter spitter) {
