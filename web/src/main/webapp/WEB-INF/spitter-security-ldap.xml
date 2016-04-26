@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
              xmlns="http://www.springframework.org/schema/security"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -10,7 +9,6 @@
 
     <!--<start id="ldap_server"/>-->
     <ldap-server root="dc=habuma,dc=com"/>
-    <!--<end id="ldap_server"/>-->
 
     <!--<start id="ldap_user_service"/>-->
     <ldap-user-service id="userService"
@@ -18,5 +16,5 @@
                        user-search-filter="(uid={0})"
                        group-search-base="ou=groups"
                        group-search-filter="member={0}"/>
-    <!--<end id="ldap_user_service"/>-->
+
 </beans:beans>

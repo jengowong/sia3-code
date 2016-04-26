@@ -13,6 +13,5 @@
         <user name="twoqubed" password="longhorns" authorities="ROLE_SPITTER"/>
         <user name="admin" password="admin" authorities="ROLE_ADMIN"/>
     </user-service>
-    <!--<end id="in_memory_user_service"/>-->
 
 </beans:beans>

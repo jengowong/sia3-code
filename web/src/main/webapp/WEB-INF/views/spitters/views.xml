@@ -15,5 +15,4 @@
     <definition name="spitters/edit" extends="template">
         <put-attribute name="content" value="/WEB-INF/views/spitters/edit.jsp"/>
     </definition>
-    <!--<end id="tile_spitter_edit"/>-->
 </tiles-definitions>

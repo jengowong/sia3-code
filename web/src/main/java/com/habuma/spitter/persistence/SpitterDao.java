@@ -1,9 +1,9 @@
 package com.habuma.spitter.persistence;
 
+import java.util.List;
+
 import com.habuma.spitter.domain.Spitter;
 import com.habuma.spitter.domain.Spittle;
-
-import java.util.List;
 
 public interface SpitterDao {
 

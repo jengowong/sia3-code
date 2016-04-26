@@ -30,12 +30,10 @@
     <authentication-manager alias="authenticationManager">
         <authentication-provider user-service-ref="userService"/>
     </authentication-manager>
-    <!--<end id="authentication_manager"/>-->
 
     <!-- ...or spitter-security-ldap.xml, or spitter-security-inmemory.xml -->
     <beans:import resource="spitter-security-ldap.xml"/>
 
     <!--<start id="globalMethodSecurity_securedAnnotations"/>-->
     <global-method-security secured-annotations="enabled"/>
-    <!--<end id="globalMethodSecurity_securedAnnotations"/>-->
 </beans:beans>
