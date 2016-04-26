@@ -47,6 +47,7 @@
         <module>persistence-jdbc</module>
         <module>persistence-hibernate</module>
         <module>service-tx</module>
+        <module>web</module>
     </modules>
 
     <distributionManagement>

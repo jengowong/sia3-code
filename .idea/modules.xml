@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/springidol-autodiscovery/springidol-autodiscovery.iml" filepath="$PROJECT_DIR$/springidol-autodiscovery/springidol-autodiscovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/springidol-javaconfig/springidol-javaconfig.iml" filepath="$PROJECT_DIR$/springidol-javaconfig/springidol-javaconfig.iml" />
       <module fileurl="file://$PROJECT_DIR$/springidol-qualifiers/springidol-qualifiers.iml" filepath="$PROJECT_DIR$/springidol-qualifiers/springidol-qualifiers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
 </project>

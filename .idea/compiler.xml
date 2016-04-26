@@ -122,6 +122,13 @@
         <processorPath useClasspath="true" />
         <module name="service-tx" />
       </profile>
+      <profile default="false" name="Annotation profile for web" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="web" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="knights" target="1.6" />
@@ -140,6 +147,7 @@
       <module name="springidol-autodiscovery" target="1.6" />
       <module name="springidol-javaconfig" target="1.6" />
       <module name="springidol-qualifiers" target="1.6" />
+      <module name="web" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
