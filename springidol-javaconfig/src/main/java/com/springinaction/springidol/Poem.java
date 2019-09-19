@@ -2,6 +2,6 @@
 package com.springinaction.springidol;
 
 public interface Poem {
-  void recite();
+    void recite();
 }
 //<end id="poem_java" />

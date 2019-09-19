@@ -4,11 +4,11 @@ package com.springinaction.springidol;
 
 //@Component
 public class Saxophone implements Instrument {
-  public Saxophone() {
-  }
+    public Saxophone() {
+    }
 
-  public void play() {
-    System.out.println("PLINK PLINK PLINK");
-  }
+    public void play() {
+        System.out.println("PLINK PLINK PLINK");
+    }
 }
 // <end id="piano_java" />

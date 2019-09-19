@@ -2,32 +2,32 @@
 package com.springinaction.springidol;
 
 public class Instrumentalist implements Performer {
-  public Instrumentalist() {
-  }
+    public Instrumentalist() {
+    }
 
-  public void perform() throws PerformanceException {
-    System.out.print("Playing " + song + " : ");
-    instrument.play();
-  }
+    public void perform() throws PerformanceException {
+        System.out.print("Playing " + song + " : ");
+        instrument.play();
+    }
 
-  private String song;
+    private String song;
 
-  public void setSong(String song) {
-    this.song = song;
-  }
+    public void setSong(String song) {
+        this.song = song;
+    }
 
-  public String getSong() {
-    return song;
-  }
+    public String getSong() {
+        return song;
+    }
 
-  public String screamSong() {
-    return song;
-  }
+    public String screamSong() {
+        return song;
+    }
 
-  private Instrument instrument;
+    private Instrument instrument;
 
-  public void setInstrument(Instrument instrument) {
-    this.instrument = instrument;
-  }
+    public void setInstrument(Instrument instrument) {
+        this.instrument = instrument;
+    }
 }
 // <end id="instrumentalist_java" />
